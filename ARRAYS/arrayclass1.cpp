@@ -86,3 +86,35 @@ using namespace std;
 //   printpair(arr,n);
 // }
 
+// void func(int*ptr1){
+//   *ptr1 = *ptr1 + 1;
+// }
+
+// int main(){
+//   int *ptr;
+//   int a=5;
+//   a=a+5;
+//   *ptr = a;
+//   func(ptr);
+//   cout<<"In main function"<<*ptr<<endl;
+// }
+
+// void func(int &a1){
+//   a1 = a1 + 1;
+// }
+
+// int main(){
+//   int a=5;
+//   func(a);
+//   cout<<"In main function"<<a<<endl;
+// }
+
+// void func(int arr[]){
+//   cout<<arr[0]<<" "<<arr[1];
+// }
+
+// int main(){
+//   int arr[2] = {1, 2};
+//   func(arr);
+// }
+
