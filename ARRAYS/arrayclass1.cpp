@@ -1,7 +1,7 @@
 # include<iostream>
 using namespace std;
 
-// // This program counts the number of zeroes and one's in an array. It uses a function called 'count'.
+// This program counts the number of zeroes and one's in an array. It uses a function called 'count'.
 // void count(int  arr[], int size){
 //   int zerocount=0;
 //   int onecount=0;
@@ -21,6 +21,7 @@ using namespace std;
 //   int arr[7]={0,0,1,0,1,0,1};
 //   int size=7;
 //   count(arr,size);
+
 // }
 
 /////// call by value
@@ -118,3 +119,51 @@ using namespace std;
 //   func(arr);
 // }
 
+// //printing three no in an array
+// void printtriple(int arr[], int n){
+//     for(int  i=0;i<n;i++){
+//         for(int j=0;j<n;j++){ 
+//             for(int k=0;k<n;k++){
+//                 cout<<arr[i]<<","<<arr[j]<<","<<arr[k]<<endl;
+//             }
+//         }
+// }
+// }
+// int  main(){
+//     int arr[]={10,20,30};
+//     int  n=3;
+//     printtriple(arr,n);
+// }
+
+// // Shorted array 
+// // // shoted 0's and 1's in an array
+// void count(int  arr[], int size){
+//   int zerocount=0;
+//   int onecount=0;
+//   for(int i=0;i<size;i++){
+//     if(arr[i]==0){
+//       zerocount++;
+//     }
+//     if(arr[i]==1){
+//       onecount++;
+//     }
+//   }
+
+//   int i;
+//     for(i=0;i<zerocount;i++){
+//         arr[i]=0;
+//     }
+//     for(int j=i; j<size; j++){
+//         arr[j]=1;
+//     }
+// }
+ 
+
+// int main(){
+//   int arr[7]={1,0,1,0,1,0,1};
+//   int size=7;
+//   count(arr,size);
+// for(int i=0;i<size;i++) {
+//     cout<<arr[i]<<" ";
+// }
+// }
