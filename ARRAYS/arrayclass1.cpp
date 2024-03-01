@@ -1,4 +1,5 @@
 # include<iostream>
+#include<limits.h>
 using namespace std;
 
 // This program counts the number of zeroes and one's in an array. It uses a function called 'count'.
@@ -166,4 +167,128 @@ using namespace std;
 // for(int i=0;i<size;i++) {
 //     cout<<arr[i]<<" ";
 // }
+// }
+
+
+///////////////2D ARRAY
+//////////////ROWWISE ACCESS
+// void print2d(int arr[][4],int row,int coloumb){
+//    for (int i = 0; i < row; i++){
+//         for (int j = 0; j < coloumb; j++){
+//             cout << arr[i][j] << " ";
+//         }cout << endl;
+// }}
+// int main(){
+//     int arr[][4]={
+//         {1,2,3,4} ,
+//         {5,6,7,8},
+//         {9,10,11,12}
+// };
+// int row=3;
+// int column=4;
+// print2d(arr,row,column);
+// }
+
+// ////////////////COLWISE ACCESS
+// void print2d(int arr[3][4],int row,int coloumb){
+//    for (int i = 0; i < coloumb; i++){
+//         for (int j = 0; j < row; j++){
+//             cout << arr[j][i] << " ";
+//         }cout << endl;
+// }}
+// int main(){
+//     int arr[3][4]={
+//         {1,2,3,4} ,
+//         {5,6,7,8},
+//         {9,10,11,19}
+// };
+// int row=3;
+// int column=4;
+// print2d(arr,row,column);
+// }
+
+/////////////////searching in 2d array
+// void print2d(int arr[3][4],int row,int coloumb,int target){
+//    for (int i = 0; i < coloumb; i++){
+//         for (int j = 0; j < row; j++){
+//             if(arr[i][j]==target){
+//                 cout<<"Element is found"<<endl;
+//             }}}
+//         cout<<"element not found"<<endl;
+//         }
+        
+// int main(){
+//     int arr[3][4]={
+//         {1,2,3,4} ,
+//         {5,6,7,8},
+//         {9,10,11,19}
+// };
+// int row=3;
+// int column=4;
+// int target=11;
+// print2d(arr,row,column,target);
+// }
+
+///////////////////MAX NO IN AN 2D ARRAY
+//  int maxin2darray(int arr[3][4],int row,int coloumb){
+//     int maxans=INT_MIN;
+//    for (int i = 0; i < row; i++){
+//         for (int j = 0; j < coloumb; j++){
+//             if(arr[i][j]>maxans){
+//                 maxans=arr[i][j];
+//             }
+//             }
+//             }
+//             return maxans;
+//  }
+             
+        
+// int main(){
+//     int arr[3][4]={
+//         {1,2,3,4} ,
+//         {5,6,7,8},
+//         {9,100,11,19}
+// };
+// int row=3;
+// int column=4;
+// cout<<maxin2darray(arr,row,column);
+// }
+
+/////////////////////SUM COLOUMB WISE
+//  int sumin2darray(int arr[2][2],int row,int coloumb){
+//     int sum=0;
+//    for (int i = 0; i <coloumb; i++){
+//         for (int j = 0; j < row; j++){
+//             sum=sum+arr[j][i];
+//  }}
+//  return sum;
+// }
+             
+        
+// int main(){
+//     int arr[2][2]={
+//         {1,2} , {5,6}
+// };
+// int row=2;
+// int column=2;
+// cout<<sumin2darray(arr,row,column);
+// }
+ 
+ ////////////////////Diagonal sum
+// int diagonalsum(int arr[3][3],int row,int col){
+// int sum=0;
+// for(int i=0;i<row;i++){
+//     sum=sum+arr[i][i];
+// }
+// return sum;
+// }
+// int main(){
+//     int arr[3][3]= {
+//         {1,2,3},
+//         {4,5,6},
+//         {7,8,9}
+//     };
+//     int row=3;
+//     int col=3;
+//     cout<<diagonalsum(arr,row,col)<<endl;
 // }
