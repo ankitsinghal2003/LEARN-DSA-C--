@@ -1,5 +1,5 @@
 # include<iostream>
-#include<limits.h>
+//#include<limits.h>
 using namespace std;
 
 // This program counts the number of zeroes and one's in an array. It uses a function called 'count'.
@@ -291,4 +291,53 @@ using namespace std;
 //     int row=3;
 //     int col=3;
 //     cout<<diagonalsum(arr,row,col)<<endl;
+// }
+
+/////////////////pratice time
+// void shortedarray(int arr[],int size){
+//     int j=0;
+//         for(int index=0; index<size;index++){
+//         if(arr[index]<0){
+//             swap(arr[index],arr[j]);
+//         }
+
+//     } j++;
+
+// }
+// int main(){
+//     int arr[]={-10,-20,-30,-40,-1,-3,-293,-5};
+//     int size=8;
+
+// shortedarray(arr,size);
+//    for(int i=0;i<size;i++){
+//     cout<<arr[i]<<" ";
+//    }
+// }
+
+/////////////////////short 0's, 1's and 2's in array///////////
+// void shortcolour(int arr[],int size){
+//   int l=0;
+//   int m=0;
+//   int h=size-1;
+//   while(m<=h){
+//     if(arr[m]==0){
+//       swap(arr[l],arr[m]);
+//       l++;
+//       m++;
+//     }else if (arr[m]==1){
+//       m++;}
+//       else
+//      // else if(arr[m]==2){
+//         swap(arr[m],arr[h]);
+//         h--;
+//     }
+//   }
+// //}
+// int main(){
+//   int arr[]={1,0,2,0,2,1};
+//   int size=6;
+//   shortcolour(arr,size);
+//   for(int i=0;i<size;i++) {
+//    cout<<arr[i]<<" ";
+// }
 // }
