@@ -341,3 +341,35 @@ using namespace std;
 //    cout<<arr[i]<<" ";
 // }
 // }
+
+////////////rotated array by 90 degree
+//// void rotate(int matrix[],int size) {
+//     const size_t n = matrix.size();
+//     for (size_t i = 0; i < n / 2; i++) {
+//         for (size_t j = i; j < n - i - 1; j++) {
+//             int temp = matrix[i][j];
+//             matrix[i][j] = matrix[n - j - 1][i];
+//             matrix[n - j - 1][i] = matrix[n - i - 1][n - j - 1];
+//             matrix[n - i - 1][n - j - 1] = matrix[j][n - i - 1];
+//             matrix[j][n - i - 1] = temp;
+//         }
+//     }
+// }
+// int main() {
+//     vector<vector<int>> matrix = {
+//         {1, 2, 3},
+//         {4, 5, 6},
+//         {7, 8, 9}
+//     };
+
+//     rotate(matrix,size);
+
+//     for (const auto &row : matrix) {
+//         for (int num : row) {
+//             cout << num << " ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
