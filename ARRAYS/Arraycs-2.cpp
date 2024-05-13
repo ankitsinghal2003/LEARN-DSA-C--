@@ -1,4 +1,5 @@
 #include<iostream>
+
 using namespace std;
 
 /// //////////FIND UNIQUE ELEMENT-->
@@ -62,3 +63,20 @@ void pair_element(int arr[],int n){
 // counting(arr,size);
 // }
 
+       ////////////// REVERSE UN AN INTEGER-->
+#include<limits.h>
+int main(){
+    int x=123;
+    int ans=0;
+ 
+    while(x!=0){
+           int digit=x%10;
+
+        ans = (ans*10) + digit;
+        x=x/10;
+    }
+    cout<<ans;
+}
+
+
+       ////////////// Shift Array by 1(left side)-->
