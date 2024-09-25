@@ -188,3 +188,25 @@ public:
         return maxi*maxi;
     }
 };
+
+             // leetcode 1155 number of dice roll in c++.
+// Is code ko recursion se kara h toh time limit exceed bahut jada h so baad me isse dp se karege.
+
+class Solution {
+public:
+    int numRollsToTarget(int n, int k, int target) {
+        // base case
+        if(n==0 && target==0)  return 1;
+        if(n==0 && target != 0)  return 0;
+        if(n!=0 && target ==0)  return 0;
+        if(target < 0)    return 0;
+
+        // recusive call
+        // ek case m solve karta hu
+        int ans=0;   //to stoe ans;
+        for(int i=0; i<=k; i++){
+            ans= ans+ numRollsToTarget(n-1, k, target-i);
+        }
+        return ans;
+    }
+};
